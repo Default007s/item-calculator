@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+
+    <div class="item-calculator">
+        <label for="item">Item</label>
+        <input id="item" type="text">
+
+        <label for="price">Price $</label>
+        <input class="price" id="price" type="text">
+
+        <label for="tax">Tax</label>
+        <input class="tax" id="tax" type="text">
+
+        <label for="quantity">Quantity</label>
+        <input class="quantity" id="quantity" type="text">
+
+        <label for="total">Total</label>
+        <input class="total-price" id="total" type="text">
+    </div>
+
+    <div class="mth">
+        <button id="addition" class="addition">+</button>
+        <button id="subtraction" class="addition">-</button>
+    </div>
+
+    <div class="footer-od">
+        <footer class="footer">
+            <i id="print" class="fas fa-print fa-2x" onclick="window.print();return false;"></i>
+                <div class="main-footer">
+
+                <label id="tt-label" for="tt-price">Total Price</label>
+                <input id="tt-price" type="text" disabled="disabled">
+
+                <label id="tti-label" for="tt-price">Total Items</label>
+                <input id="tt-items" type="text" disabled="disabled">
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d3a6cae3cd.js" crossorigin="anonymous"></script>
+</body>
+</html>
